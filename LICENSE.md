@@ -1,15 +1,20 @@
 Software License Agreement
 ==========================
 
-**CKEditor 5 component for Vue.js 3+** – https://github.com/ckeditor/ckeditor5-vue <br>
-Copyright (c) 2003-2024, [CKSource](http://cksource.com) Holding sp. z o.o. All rights reserved.
+**CKEditor 4 component for Vue.js** – https://github.com/ckeditor/ckeditor4-vue <br>
+Copyright (c) 2003-2022, [CKSource](http://cksource.com) Holding sp. z o.o. All rights reserved.
 
-Licensed under the terms of [GNU General Public License Version 2 or later](http://www.gnu.org/licenses/gpl.html).
+Licensed under the terms of any of the following licenses at your
+choice:
 
-Sources of Intellectual Property Included in CKEditor
------------------------------------------------------
+- GNU General Public License Version 2 or later (the "GPL")
+  http://www.gnu.org/licenses/gpl.html
 
-Where not otherwise indicated, all CKEditor content is authored by CKSource engineers and consists of CKSource-owned intellectual property. In some specific instances, CKEditor will incorporate work done by developers outside of CKSource with their express permission.
+- GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+  http://www.gnu.org/licenses/lgpl.html
+
+- Mozilla Public License Version 1.1 or later (the "MPL")
+  http://www.mozilla.org/MPL/MPL-1.1.html
 
 Trademarks
 ----------

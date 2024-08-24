@@ -1,113 +1,87 @@
 {
-  "name": "@ckeditor/ckeditor5-vue",
-  "version": "7.0.0",
-  "description": "Official Vue.js 3+ component for CKEditor 5 – the best browser-based rich text editor.",
-  "keywords": [
-    "wysiwyg",
-    "rich text",
-    "editor",
-    "html",
-    "contentEditable",
-    "editing",
-    "vue",
-    "vue.js",
-    "vue component",
-    "vue.js component",
-    "ckeditor",
-    "ckeditor5",
-    "ckeditor 5"
-  ],
-  "type": "module",
-  "main": "./dist/ckeditor.umd.cjs",
-  "module": "./dist/ckeditor.js",
-  "types": "./dist/plugin.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/plugin.d.ts",
-      "import": "./dist/ckeditor.js",
-      "require": "./dist/ckeditor.umd.cjs"
-    },
-    "./package.json": "./package.json"
-  },
-  "dependencies": {
-    "lodash-es": "^4.17.21"
-  },
-  "peerDependencies": {
-    "ckeditor5": ">=42.0.0 || ^0.0.0-nightly",
-    "vue": "^3.4.0"
-  },
-  "devDependencies": {
-    "@ckeditor/ckeditor5-dev-bump-year": "^40.1.0",
-    "@ckeditor/ckeditor5-dev-ci": "^40.1.0",
-    "@ckeditor/ckeditor5-dev-release-tools": "^40.1.0",
-    "@ckeditor/ckeditor5-dev-utils": "^40.1.0",
-    "@types/lodash-es": "^4.17.6",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "@vitest/browser": "^2.0.0",
-    "@vitest/coverage-istanbul": "^2.0.0",
-    "@vitest/ui": "^2.0.0",
-    "@vue/test-utils": "^2.3.1",
-    "ckeditor5": "^42.0.0",
-    "coveralls": "^3.1.1",
-    "eslint": "^7.32.0",
-    "eslint-config-ckeditor5": "^5.3.2",
-    "eslint-plugin-vue": "^9.9.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^10.2.11",
-    "listr2": "^6.5.0",
-    "minimist": "^1.2.5",
-    "semver": "^7.6.2",
-    "typescript": "~5.4.5",
-    "vite": "^5.3.1",
-    "vitest": "^2.0.0",
-    "vue": "^3.4.30",
-    "vue-eslint-parser": "^9.1.0",
-    "vue-tsc": "^2.0.22",
-    "webdriverio": "^8.39.0"
-  },
-  "resolutions": {
-    "wrap-ansi": "7.0.0",
-    "string-width": "4.1.0",
-    "semver": "^7.0.0",
-    "ws": "^8"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
-    "test": "vitest run --coverage",
-    "test:watch": "vitest --ui --watch",
-    "lint": "eslint \"{demo,src,tests}/**/*.{ts,vue}\"",
-    "postinstall": "node ./scripts/postinstall.js",
-    "changelog": "node ./scripts/changelog.js",
-    "release:prepare-packages": "node ./scripts/preparepackages.js",
-    "release:publish-packages": "node ./scripts/publishpackages.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5-vue.git"
-  },
-  "files": [
-    "dist",
-    "README.md",
-    "CHANGELOG.md",
-    "LICENSE.md"
-  ],
-  "author": "CKSource (http://cksource.com/)",
-  "license": "GPL-2.0-or-later",
-  "bugs": {
-    "url": "https://github.com/ckeditor/ckeditor5-vue/issues"
-  },
-  "homepage": "https://github.com/ckeditor/ckeditor5-vue",
-  "eslintIgnore": [
-    "coverage/**",
-    "dist/**"
-  ],
-  "lint-staged": {
-    "**/*.{js,ts,vue}": [
-      "eslint --quiet"
-    ]
-  }
+	"name": "@mayasabha/ckeditor4-vue3",
+	"version": "1.0.8",
+	"main": "dist/ckeditor.js",
+	"description": "Vue.js 3+ component for CKEditor 4 - the best browser-based rich text editor. Developed and maintained by Mayasabha.",
+	"files": [
+		"dist/"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.23.9",
+		"@babel/preset-env": "^7.23.9",
+		"@vue/test-utils": "^2.4.4",
+		"babel-loader": "^9.1.3",
+		"chai": "^5.0.3",
+		"core-js": "^3.35.1",
+		"eslint": "^8.56.0",
+		"karma": "^6.4.2",
+		"karma-browserstack-launcher": "^1.6.0",
+		"karma-chai": "^0.1.0",
+		"karma-chrome-launcher": "^3.2.0",
+		"karma-coverage": "^2.0.3",
+		"karma-coveralls": "^2.0.0",
+		"karma-firefox-launcher": "^2.1.1",
+		"karma-mocha": "^2.0.1",
+		"karma-mocha-reporter": "^2.2.4",
+		"karma-sinon": "^1.0.5",
+		"karma-sourcemap-loader": "^0.4.0",
+		"karma-webpack": "^5.0.1",
+		"live-server": "^1.2.1",
+		"minimist": "^1.2.5",
+		"mocha": "^10.3.0",
+		"sinon": "^17.0.1",
+		"terser-webpack-plugin": "^5.3.10",
+		"vue": "^3.4.18",
+		"vue-router": "^4.2.5",
+		"vue-template-compiler": "^2.7.16",
+		"webpack": "^5.90.1",
+		"webpack-cli": "^5.1.4"
+	},
+	"peerDependencies": {
+		"vue": "^3.3.4"
+	},
+	"dependencies": {
+		"ckeditor4-integrations-common": "^1.0.0"
+	},
+	"engines": {
+		"node": ">=8.0.0",
+		"npm": ">=5.7.1"
+	},
+	"scripts": {
+		"start": "npm run build && live-server --open=samples/index.html",
+		"build": "webpack --mode production",
+		"develop": "webpack --mode development --watch",
+		"test": "karma start",
+		"bump": "node ./scripts/bump.js",
+		"preversion": "npm test",
+		"version": "npm run build && git add -f dist/",
+		"postversion": "git rm -r --cached dist/ && git commit -m \"Clean after release [ci skip]\" && git push origin && git push origin --tags"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mayasabha/ckeditor4-vue3.git"
+	},
+	"keywords": [
+		"wysiwyg",
+		"rich text",
+		"editor",
+		"rte",
+		"html",
+		"contentEditable",
+		"editing",
+		"vue",
+		"vue.js",
+		"vue component",
+		"vue.js component",
+		"component",
+		"ckeditor",
+		"ckeditor4",
+		"ckeditor 4"
+	],
+	"author": "Mayasabha (https://apoorvpal.in/)",
+	"license": "(GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1-or-later)",
+	"bugs": {
+		"url": "https://github.com/mayasabha/ckeditor4-vue3/issues"
+	},
+	"homepage": "https://github.com/mayasabha/ckeditor4-vue3"
 }
